@@ -1,0 +1,26 @@
+{
+  "name": "tailwind-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "css": "tailwindcss -i ./src/input.css -o ./public/stylesheets/style.css --watch",
+    "dev": "npm run css & live-server public --port=8080",
+    "server": "npm run css & nodemon ./bin/www",
+    "build": "tailwindcss -o ./public/stylesheets/style.min.css --minify"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.8",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "nodemon": "^2.0.20",
+    "tailwindcss": "^3.1.8"
+  }
+}
