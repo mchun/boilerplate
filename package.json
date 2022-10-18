@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "css": "tailwindcss -i ./src/input.css -o ./public/stylesheets/style.css --watch",
+    "css": "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch",
     "dev": "npm run css & live-server public --port=8080",
     "server": "npm run css & nodemon ./bin/www",
-    "build": "tailwindcss -o ./public/stylesheets/style.min.css --minify"
+    "build": "tailwindcss -o ./public/css/style.min.css --minify"
   },
   "dependencies": {
     "better-sqlite3": "^7.6.2",
