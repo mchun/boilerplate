@@ -1,0 +1,1 @@
+# boilerplate code for a simple web app with express, tailwind 3 and sqlite db
