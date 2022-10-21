@@ -5,7 +5,6 @@ let database_path = "database.db"
 
 const db = require('better-sqlite3')(database_path);
 
-/* GET feedbacks listing. */
 router.post('/', function(req, res, next) {
     let createdAt = new Date();
     db.prepare('INSERT INTO feedback(feedback_txt, created_at) values(?,?)')
