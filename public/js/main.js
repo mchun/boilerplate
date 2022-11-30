@@ -2,10 +2,6 @@ $(document).ready(function(){
 
   $("#feedback_cancel_btn").click(function(e){
     $("#feedback_txt").val("");
-  })
-  
-  $("form").submit(function(e){
-      e.preventDefault();
   });
 
   $("#feedback_form").submit(function(e){
